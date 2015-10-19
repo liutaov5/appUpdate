@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_app_update_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app_update_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/iv_app_update_icon"
+        android:layout_toRightOf="@id/iv_app_update_icon"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/tv_app_update_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_app_update_icon"
+        android:layout_below="@id/iv_app_update_icon"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="#FFF" />
+
+    <ProgressBar
+        android:id="@+id/pb_app_update"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_app_update_name"
+        android:layout_below="@id/tv_app_update_name"
+        android:max="100"
+        android:progress="0" />
+
+</RelativeLayout>
